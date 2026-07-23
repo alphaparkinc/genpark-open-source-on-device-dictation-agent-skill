@@ -1,0 +1,31 @@
+{
+  "name": "genpark-open-source-on-device-dictation-agent-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 100% on-device local speech-to-text dictation agent with zero cloud dependency.",
+  "author": "genpark",
+  "category": "productivity",
+  "tags": [
+    "on-device-stt",
+    "local-dictation",
+    "privacy-first",
+    "speech-recognition"
+  ],
+  "inputs": {
+    "audio_buffer_size": {
+      "type": "integer"
+    },
+    "language": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "transcription": {
+      "type": "string"
+    },
+    "is_on_device": {
+      "type": "boolean"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
